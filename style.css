@@ -1,6 +1,7 @@
 .infocard{
-    background-color: darkgrey;
+    background-color: darkslategray;
     margin: 20%;
     padding: 20px;
     border-radius: 10px;
+    text-decoration-color: azure;
 }
