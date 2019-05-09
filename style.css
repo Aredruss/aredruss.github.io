@@ -1,5 +1,5 @@
 .infocard{
-    background-color: darkslategray;
+    background-color: black;
     margin: 20%;
     padding: 20px;
     border-radius: 10px;
@@ -7,4 +7,10 @@
 
 p{
     color: azure;
+    font-size: 20px;
+}
+
+body{
+    font-family: "Droid Sans";
+    background: linear-gradient(90deg, rgba(255,0,50,1) 10%, rgba(252,176,69,1) 82%);
 }
