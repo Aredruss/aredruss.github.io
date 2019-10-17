@@ -1,16 +1,33 @@
-.infocard{
+.infocard {
     background-color: black;
-    margin: 20%;
     padding: 20px;
+    margin: 40px;
     border-radius: 10px;
 }
 
-p{
+p {
     color: azure;
     font-size: 20px;
+    font-family: "Liberation Mono", sans-serif;
 }
 
-body{
-    font-family: "Droid Sans";
-    background: linear-gradient(90deg, rgba(255,0,50,1) 10%, rgba(252,176,69,1) 82%);
+body {
+    background: linear-gradient(270deg, rgba(255, 0, 50, 0.87) 10%, rgb(0, 121, 252) 120%);
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding-left: 80%;
+    padding-top: 10px;
+    font-family:  "Liberation Mono", sans-serif;
+}
+
+header{
+ padding-left:40px;
+ background-color: black;
+    font-family: "Liberation Mono", sans-serif;
 }
