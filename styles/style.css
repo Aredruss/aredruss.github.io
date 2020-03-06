@@ -1,0 +1,78 @@
+
+html {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #1a1a1a url(../assets/kalmar.png) repeat;
+}
+
+main {
+    width: 40%;
+    margin: 0 auto;
+}
+
+a {
+    color: whitesmoke;
+    background: #303030;
+    padding: 1%;
+    text-decoration: none;
+    border-radius: 1%;
+}
+
+.info-card {
+    background: #1D1D1D;
+    elevation: below;
+    font-family: "Droid Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 1%;
+    height: 200%;
+    margin: 0 auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+}
+
+.projects {
+    display: -webkit-flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: start;
+}
+
+.skills {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.about {
+    margin: 0 auto;
+    width: 60%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.project-icon {
+    width: 20%;
+    height: 20%;
+}
+
+.mirumon {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.divider {
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background: #303030;
+}
+
