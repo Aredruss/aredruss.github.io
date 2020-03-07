@@ -9,6 +9,12 @@ main {
 }
 
 a {
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.button-link {
     color: whitesmoke;
     background: #303030;
     padding: 1%;
