@@ -43,9 +43,10 @@ a {
 
 .projects {
     display: -webkit-flex;
+    flex-direction: column;
     width: 80%;
+    align-items: start;
     margin: 0 auto;
-    align-items: center;
     text-align: start;
 }
 
@@ -64,16 +65,22 @@ a {
 }
 
 .project-icon {
+    margin-top: 2%;
     width: 20%;
     height: 20%;
 }
 
-.mirumon {
-    margin-top: 5px;
-    margin-left: 10px;
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 25px;
     line-height: 22px;
     font-size: 18px;
+}
+
+.project-info {
+    margin-left: 5%;
 }
 
 .divider {
