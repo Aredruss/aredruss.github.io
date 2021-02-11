@@ -1,92 +1,128 @@
 
 html {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #1a1a1a url(../assets/kalmar.png) repeat;
+    background: linear-gradient(90deg, #91ebf3, #e23247);
 }
 
 main {
-    width: 40%;
-    margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-    color: whitesmoke;
-
-}
-
-.button-link {
-    color: whitesmoke;
-    background: #303030;
-    padding: 1%;
-    text-decoration: none;
-    border-radius: 1%;
-}
-
-.info-card {
-    background: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 3% auto;
+    width: 80%;
     elevation: below;
-    font-family: "Droid Sans", sans-serif;
-    color: rgb(255, 255, 255);
-    border-radius: 1%;
-    height: 200%;
-    margin: 0 auto;
-    padding: 1%;
-    text-align: center;
-    min-width: 400px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbutton {
+    background: black;
+    color: white;
+    font-family: "Source Code Pro", sans-serif;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.navbutton:active {
+    background: black;
+}
+
+.navbutton:focus {
+    background: #4e4e4e;
+}
+
+
+.navbutton-no-tint {
+    border: none;
+    color: black;
+    background: white;
+    margin-left: 10px;
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.navbutton-no-tint:active {
+    background: white;
+    color: black;
+}
+
+.navbutton-no-tint:focus {
+    background: #4e4e4e;
+    color: white;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 5%;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.head-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .avatar {
-    border-radius: 50%;
-    width: 25%;
-    height: 25%;
-}
-
-.projects {
-    display: -webkit-flex;
-    flex-direction: column;
-    width: 80%;
-    align-items: start;
-    margin: 0 auto;
-    text-align: start;
-}
-
-.skills {
-    width: 60%;
-    margin: 0 auto;
-    font-size: 18px;
-    text-align: justify;
-}
-
-.about {
-    margin: 0 auto;
-    width: 60%;
-    text-align: justify;
-    font-size: 18px;
-}
-
-.project-icon {
-    margin-top: 2%;
+    border-radius: 5px;
     width: 20%;
     height: 20%;
 }
 
-.project {
+.contact-info {
+    flex-direction: column;
+    margin-left: 5%;
+    font-family: "Source Code Pro", sans-serif;
+    flex-wrap: wrap;
+}
+
+.about-info {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-bottom: 25px;
-    line-height: 22px;
-    font-size: 18px;
+    margin-top: 4%;
 }
 
-.project-info {
-    margin-left: 5%;
+.career-info {
+    width: 50%;
 }
 
-.divider {
-    margin: 0 auto;
-    width: 90%;
-    height: 1px;
-    background: #303030;
+.career-text {
+    font-size: large;
+    font-family: "Source Code Pro", sans-serif;
 }
+
+.about-h5 {
+    font-family: "Source Code Pro", sans-serif;
+}
+
+.skillset {
+    flex-wrap: wrap;
+    margin-left: 20%;
+    width: 25%;
+}
+
+.skill-chip{
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
 

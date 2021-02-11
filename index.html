@@ -4,80 +4,70 @@
     <meta charset="utf-8"/>
     <title>Aredruss</title>
     <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="icon" href="assets/kalmar.png">
 </head>
-<header></header>
 <body>
 <main>
-    <div class="info-card">
-        <img class="avatar" src="assets/avatar.jpg">
-        <h2>Alexander Medyanik</h2>
-        <h4><a class="button-link" href="https://github.com/Aredruss" target="_blank">My Github</a></h4>
-        <hr>
-        <h2>About me</h2>
-        <div class="about">
-            <p> I'm an Android Developer with skills in Kotlin & Java,
-                currently looking for some interesting projects.<br></p>
-            <p> I'm an active user of Manjaro Linux, and create voxel 3D-models as a hobby<br>
-            </p>
+    <div class="main-info">
+        <div class="navbar">
+            <button class="navbutton"
+                    onclick=window.open('https://github.com/Aredruss',"_blank")>
+                <b>My Github</b>
+            </button>
+            <button class="navbutton-no-tint"
+                    onclick=window.open('https://www.linkedin.com/in/alexander-medyanik-2636751b8/',"_blank")>
+                <b>My LinkedIn</b>
+            </button>
+            <button class="navbutton-no-tint"
+                    onclick=window.open('https://hh.ru/resume/9786da5dff0778e28c0039ed1f3572366f744f',"_blank")>
+                <b>My CV</b>
+            </button>
         </div>
-        <h2>My skills</h2>
-        <div class="skills">
-            <p><strong>Kotlin</strong>, <strong>Android</strong>, Java, A little bit of Golang and Python, SQL, HTML,
-                CSS</p>
-        </div>
-        <h2>My Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <div class="project-icon">
-                    <a href="https://github.com/mirumon" target="_blank">
-                        <img class=project-icon" src="assets/Mirumon.png">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <a href="https://github.com/mirumon" target="_blank">
-                        <p>
-                            <strong>
-                                Mirumon
-                            </strong>
-                            <br>
-                            An open-source monitoring system
-                            designed to control and support your computer equipment <br>
-                            <br>
-                            <strong style="color: #898989">Android-developer</strong>
-                        </p>
-                    </a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-icon">
-                    <a href="https://express.ms" target="_blank">
-                        <img class=project-icon" src="assets/express_logo.png" width="90%" height="90%">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <a href="https://express.ms" target="_blank">
-                        <p>
-                            <strong>
-                                Express
-                            </strong>
-                            <br>
-                            Corporate-oriented messaging platform <br>
-                            <br>
-                            <strong style="color: #898989">Android-developer</strong>
-                        </p>
-                    </a>
+        <div class="head-info">
+            <img class="avatar" src="assets/avatar.jpg" alt="My photo. Sorry It's not there.">
+            <div class="contact-info">
+                <div>
+                    <h4>Alexander Medyanik</h4>
+                    <h5 style="color: grey">Android Developer</h5>
+                    <div>   </div>
+                    <h6>
+                        Email: aredruss@gmail.com <br> <br>
+                        Telegram: @Aredruss
+                    </h6>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="contacts">
-            <h3>Contact me</h3>
-            <p>aredruss@gmail.com</p>
+        <div class="about-info">
+            <div class="career-info">
+                <h5  class="about-h5"><b>My Career</b></h5>
+                <p class="career-text">I got into Android Development back in late 2018 and have worked on several projects
+                    ever since.
+                    Among them are an app for monitoring your computer equipment -
+                    <a href="https://github.com/mirumon" target="_blank">Mirumon</a>,
+                    and a fast, reliable and encryption-secured corporate messenger
+                    - <a href="https://express.ms/" target="_blank">Express</a>.
+                    You can also find some of my petprojects on my GitHub page.</p>
+            </div>
+            <div class="skillset">
+                <h5 class="about-h5"><b>My Skills</b></h5>
+                <div class="skill-chips">
+                </div>
+            </div>
         </div>
     </div>
 </main>
 </body>
-<footer>
-</footer>
 </html>
+
+<script>
+    var skills = ['Kotlin', 'Android', 'Java', 'Git', 'RxJava', 'MVVM', 'MVP', 'Linux', 'SQL', 'Figma']
+    var target = document.querySelector(".skill-chips")
+    var template = "<div class = \"skill-chip\"><b>~sk~</b></div>"
+
+    skills.forEach(function (skill) {
+        target.insertAdjacentHTML("beforeend", template.replace(/~sk~/g, skill))
+    })
+
+</script>
