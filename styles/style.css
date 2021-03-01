@@ -1,8 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 html {
-    background: linear-gradient(90deg, #91ebf3, #e23247);
+    background: linear-gradient(90deg, #e7253b, #0a0836, #0a71bf);
 }
 
 main {
@@ -17,6 +16,7 @@ main {
 
 .navbar {
     display: flex;
+    align-content: center;
     flex-direction: row-reverse;
 }
 
@@ -115,7 +115,7 @@ main {
     width: 25%;
 }
 
-.skill-chip{
+.skill-chip {
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -123,6 +123,16 @@ main {
     color: white;
     padding: 5px;
     border-radius: 5px;
+}
+
+.footer-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 10%;
+    width: 10%;
 }
 
 
