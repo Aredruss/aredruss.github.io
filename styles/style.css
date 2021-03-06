@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
 
 html {
-    background: linear-gradient(90deg, #e7253b, #0a0836, #0a71bf);
+    background: linear-gradient(90deg, #e7253b, #42a0e6);
 }
 
 main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 3% auto;
+    margin: 2% auto;
     width: 80%;
     elevation: below;
 }
@@ -77,8 +78,13 @@ main {
 
 .avatar {
     border-radius: 5px;
-    width: 20%;
-    height: 20%;
+    width: 18%;
+    height: 18%;
+}
+
+.job-title {
+    font-family: "Libre Barcode 39 Text", sans-serif;
+    color: #161616;
 }
 
 .contact-info {
@@ -118,10 +124,11 @@ main {
 .skill-chip {
     display: inline-block;
     margin-right: 5px;
+    margin-top: 5px;
     margin-bottom: 5px;
     background: black;
     color: white;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
 }
 
