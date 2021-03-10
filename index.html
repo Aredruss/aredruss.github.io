@@ -2,70 +2,76 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8"/>
+    <meta property="og:image" content="https://aredruss.github.io/assets/logo.png">
+    <meta property="og:title" content="Aredruss on Github Pages">
+    <meta property="og:description" content="Hi! My name is Alexander, and I'm an Android Developer.">
     <title>Aredruss</title>
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="icon" href="assets/kalmar.png">
+    <link rel="icon" href="assets/Icon-Logo.png">
 </head>
 <body>
 <main>
     <div class="main-info">
-        <div class="navbar">
-            <button class="navbutton"
-                    onclick=window.open('https://github.com/Aredruss',"_blank")>
-                <b>My Github</b>
-            </button>
-            <button class="navbutton-no-tint"
-                    onclick=window.open('https://www.linkedin.com/in/alexander-medyanik-2636751b8/',"_blank")>
-                <b>My LinkedIn</b>
-            </button>
-            <button class="navbutton-no-tint"
-                    onclick=window.open('https://hh.ru/resume/9786da5dff0778e28c0039ed1f3572366f744f',"_blank")>
-                <b>My CV</b>
-            </button>
+        <div class="card-header">
+            <div class="navbar">
+                <button class="navbutton"
+                        onclick=window.open('https://github.com/Aredruss',"_blank")>
+                    <b>My Github</b>
+                </button>
+                <button class="navbutton-no-tint"
+                        onclick=window.open('https://www.linkedin.com/in/alexander-medyanik-2636751b8/',"_blank")>
+                    <b>My LinkedIn</b>
+                </button>
+                <button class="navbutton-no-tint"
+                        onclick=window.open('https://hh.ru/resume/9786da5dff0778e28c0039ed1f3572366f744f',"_blank")>
+                    <b>My CV</b>
+                </button>
+            </div>
         </div>
-        <div class="head-info">
-            <img class="avatar" src="assets/avatar.jpg" alt="My photo. Sorry It's not there.">
-            <div class="contact-info">
-                <div>
-                    <h4><b>Alexander Medyanik</b></h4>
-                    <h3 class="job-title">Android Developer</h3>
-                    <h6>
-                        Email: aredruss@gmail.com <br> <br>
-                        Telegram: @Aredruss
-                    </h6>
+        <div class="info">
+            <div class="head-info">
+                <img class="avatar" src="assets/avatar.jpg" alt="My photo. Sorry It's not there.">
+                <div class="contact-info">
+                    <div>
+                        <h4><b>Alexander Medyanik</b></h4>
+                        <h3 class="job-title">Android Developer</h3>
+                        <h6>
+                            Email: aredruss@gmail.com <br> <br>
+                            Telegram: @Aredruss
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="about-info">
+                <div class="career-info">
+                    <h5 class="about-h5"><b>My Career</b></h5>
+                    <p class="career-text">I got into Android Development back in late 2018 and have worked on several
+                        projects
+                        ever since.
+                        Among them are an app for monitoring your computer equipment -
+                        <a href="https://github.com/mirumon" target="_blank"><b>Mirumon</b></a>,
+                        and a fast, reliable and encryption-secured corporate messenger
+                        - <a href="https://express.ms/" target="_blank"><b>Express</b></a>.
+                        You can also find some of my petprojects on my GitHub page.</p>
+                </div>
+                <div class="skillset">
+                    <h5 class="about-h5"><b>My Skills</b></h5>
+                    <div class="skill-chips">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="about-info">
-            <div class="career-info">
-                <h5 class="about-h5"><b>My Career</b></h5>
-                <p class="career-text">I got into Android Development back in late 2018 and have worked on several
-                    projects
-                    ever since.
-                    Among them are an app for monitoring your computer equipment -
-                    <a href="https://github.com/mirumon" target="_blank"><b>Mirumon</b></a>,
-                    and a fast, reliable and encryption-secured corporate messenger
-                    - <a href="https://express.ms/" target="_blank"><b>Express</b></a>.
-                    You can also find some of my petprojects on my GitHub page.</p>
-            </div>
-            <div class="skillset">
-                <h5 class="about-h5"><b>My Skills</b></h5>
-                <div class="skill-chips">
-                </div>
-            </div>
-        </div>
-        <div class="footer-bar">
-            <img class="logo" src="assets/logo.png">
-        </div>
+
     </div>
 </main>
 </body>
 </html>
 
 <script>
-    var skills = ['Kotlin', 'Android', 'Java', 'Git', 'RxJava', 'MVVM', 'MVP', 'Linux', 'SQL', 'Figma']
+    var skills = ['Kotlin', 'Android', 'Java', 'RxJava',
+        'OkHTTP','Jetpack Components','Git','MVVM', 'MVP', 'Linux', 'SQL', 'Figma']
     var target = document.querySelector(".skill-chips")
     var template = "<div class = \"skill-chip\"><b>~sk~</b></div>"
 

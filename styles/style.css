@@ -9,26 +9,29 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 2% auto;
+    margin: 1% auto;
     width: 80%;
-    elevation: below;
+    background: #ffffff;
+    border-radius: 10px;
 }
 
-
 .navbar {
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-right: 20px;
     display: flex;
-    align-content: center;
     flex-direction: row-reverse;
 }
 
 .navbutton {
     background: black;
     color: white;
+    width: 120px;
     font-family: "Source Code Pro", sans-serif;
     border-radius: 5px;
     border: none;
     font-size: 18px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .navbutton:active {
@@ -39,11 +42,11 @@ main {
     background: #4e4e4e;
 }
 
-
 .navbutton-no-tint {
     border: none;
     color: black;
     background: white;
+    width: 150px;
     margin-left: 10px;
     font-family: "Source Code Pro", sans-serif;
     font-size: 18px;
@@ -60,13 +63,10 @@ main {
     color: white;
 }
 
-.main-info {
+.info {
     display: flex;
     flex-direction: column;
-    background: #ffffff;
-    padding: 5%;
-    position: static;
-    border-radius: 5px;
+    padding: 4%;
     flex-wrap: wrap;
 }
 
@@ -130,16 +130,6 @@ main {
     color: white;
     padding: 10px;
     border-radius: 5px;
-}
-
-.footer-bar {
-    display: flex;
-    justify-content: center;
-}
-
-.logo {
-    height: 10%;
-    width: 10%;
 }
 
 
