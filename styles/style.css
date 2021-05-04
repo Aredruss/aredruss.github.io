@@ -26,6 +26,7 @@ main {
 .navbutton {
     background: black;
     color: white;
+    height: 40px;
     width: 120px;
     font-family: "Source Code Pro", sans-serif;
     border-radius: 5px;
@@ -45,6 +46,7 @@ main {
 .navbutton-no-tint {
     border: none;
     color: black;
+    height: 40px;
     background: white;
     width: 150px;
     margin-left: 10px;
