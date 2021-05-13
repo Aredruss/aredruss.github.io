@@ -66,20 +66,27 @@
                 </div>
             </div>
         </div>
-
+        <div class="copyright-info">
+            <h6 class="year"></h6>
+        </div>
     </div>
 </main>
 </body>
 </html>
 
 <script>
-    var skills = ['Kotlin', 'Android', 'Java', 'RxJava', 'Coroutines',
-        'OkHTTP', 'Jetpack Components', 'Git', 'MVVM', 'MVP', 'Linux', 'SQL', 'Figma', 'Cooking :)']
-    var target = document.querySelector(".skill-chips")
-    var template = "<div class = \"skill-chip\"><b>~sk~</b></div>"
+    const skills = ['Kotlin', 'Android', 'Java', 'RxJava', 'Coroutines',
+        'OkHTTP', 'Jetpack Components', 'Git', 'MVVM', 'MVP', 'Linux', 'SQL', 'Figma', 'Cooking :)'];
+    let target = document.querySelector(".skill-chips");
+    let template = "<div class = \"skill-chip\"><b>~sk~</b></div>";
 
     skills.forEach(function (skill) {
         target.insertAdjacentHTML("beforeend", template.replace(/~sk~/g, skill))
     })
 
+
+    const year = new Date().getFullYear();
+    target = document.querySelector(".year")
+    template = "©~sk~ Aredruss"
+    target.insertAdjacentText("beforebegin", template.replace(/~sk~/g, year))
 </script>
