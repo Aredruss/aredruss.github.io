@@ -43,7 +43,11 @@ main {
 }
 
 .navbutton:focus {
-    background: #4e4e4e;
+    background: #000000;
+}
+
+.navbutton:hover {
+    background: linear-gradient(90deg, #e7253b, #42a0e6);
 }
 
 .navbutton-no-tint {
@@ -65,9 +69,15 @@ main {
 }
 
 .navbutton-no-tint:focus {
-    background: #4e4e4e;
+    background: #000000;
     color: white;
 }
+
+.navbutton-no-tint:hover {
+    background: #000000;
+    color: white;
+}
+
 
 .info {
     display: flex;
